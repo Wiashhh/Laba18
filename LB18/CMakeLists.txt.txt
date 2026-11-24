@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.10)
+project(Lab18Task3 CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+include_directories(include)
+
+add_executable(lab18
+    src/main.cpp
+    src/array_io.cpp
+    src/math_utils.cpp
+    src/fibonacci.cpp
+    src/array_processor.cpp
+)
+
+add_executable(lab18_tests
+    tests/test_all.cpp
+    src/math_utils.cpp
+    src/fibonacci.cpp
+    src/array_processor.cpp
+)
